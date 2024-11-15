@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carpe Diem</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material-Icons">
+	<link rel="stylesheet" type="text/css" href="css/song.css">
+</head>
+<body>
+<div class="player">
+	<div class="cover">
+		<img src="https://i.pinimg.com/564x/9a/21/2a/9a212a29b0957c3d8179e6eae7ded297.jpg">
+	</div>
+	<div class="info">
+		<div class="title">Just a Song</div>
+		<div class="singer">Tell Everything</div>
+	</div>
+	<div class="music-box">
+		<input type="range" step="1" class="seekbar" value="0" min="0" max="100" oninput="handleSeekBar()">
+		<audio class="music-element">
+			<source src="music.mp3" type="audio/mp3">
+		</audio>
+
+		<span class="current-time">0:0</span><span class="duration">0:0</span>
+		<span class="play" onclick="handlePlay()">
+			<i class="fa-solid fa-play"></i>
+		</span>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="song.js"></script>
+<script src="https://kit.fontawesome.com/a57dc9277c.js" crossorigin="anonymous"></script>
+</body>
+</html>
